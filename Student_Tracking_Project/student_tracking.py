@@ -19,7 +19,7 @@ import student_tracking_gui
 import student_tracking_func
 
 class ParentWindow(Frame):
-    def __init__(self, master, *args, **kwards):
+    def __init__(self, master, *args, **kwargs):
         Frame.__init__(self, master, *args, **kwargs)
 
         #Defining master frame configuration
