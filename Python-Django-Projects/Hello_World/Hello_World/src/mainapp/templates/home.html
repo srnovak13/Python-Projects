@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome! {% endblock %}
+
+{% block header %} Welcome to my World, {{user}} {% endblock %}
+
+{% block body %}
+
+{% for name in namelist %}
+    <ul>
+        {% if name == "Pocahontas" %}
+        <li>Hello{{ name }}</li>
+        {% else %}
+        <li> {{ name }} </li>
+        {% endif %}
+    </ul>
+{% endfor %}
+
+{% endblock %}

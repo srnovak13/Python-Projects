@@ -1,0 +1,24 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %} {% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel ="stylesheet" type = "text/css" href = {% static 'css/layout.css' %}>
+    </head>
+    <body>
+        <div class="page_container">
+            <ul class="topnav">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Content</a> </li>
+            </ul>
+            <header class="header-title">
+                <h1>{% block header %} {% endblock %}</h1>
+            </header>
+            {% block body %} {% endblock %}
+        </div>
+    </body>
+
+</html>

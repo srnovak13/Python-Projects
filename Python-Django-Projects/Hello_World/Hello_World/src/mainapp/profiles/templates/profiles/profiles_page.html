@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome! {% endblock %}
+
+{% block header %} Welcome to my World, {{user}} {% endblock %}
+
+{% block body %}
+
+{% for users in userlist %}
+    <ul>
+        <li> {{ users.username }}</li>
+    </ul>
+
+{% endfor %}
+
+{% endblock %}
